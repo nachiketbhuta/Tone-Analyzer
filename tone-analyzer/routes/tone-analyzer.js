@@ -25,7 +25,7 @@ router.post("/", (req, res, err) => {
     if (error) {
       res.json(err);
     } else {
-      res.json(toneAnalysis);
+      res.send(toneAnalysis);
     }
   });
 });
